@@ -16,7 +16,7 @@ set(PROJECT_SOURCES
         main.cpp
 )
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+if(QT_VERSION GREATER_EQUAL 6.2)
     qt_add_executable(shared-qsinglepointevent-bug
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
@@ -62,6 +62,6 @@ install(TARGETS shared-qsinglepointevent-bug
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-if(QT_VERSION_MAJOR EQUAL 6)
+if(QT_VERSION GREATER_EQUAL 6.2)
     qt_finalize_executable(shared-qsinglepointevent-bug)
 endif()
