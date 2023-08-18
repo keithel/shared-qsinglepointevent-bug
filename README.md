@@ -4,7 +4,7 @@ more than one QSinglePointEvent (or derived type) objects on the stack, the
 first event created has its position overwritten with the coordinates of the
 second event.
 
-Bug exists in Qt 6.n
+Bug exists in Qt 6.5.2
 
 ## Running
 cmake -B build -G Ninja . -DCMAKE_PREFIX_PATH=<Qt dir>/lib/cmake
